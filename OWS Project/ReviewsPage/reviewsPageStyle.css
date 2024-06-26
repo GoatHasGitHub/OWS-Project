@@ -1,0 +1,498 @@
+body {
+    font-size: 16px;
+    background: url(https://t4.ftcdn.net/jpg/06/19/38/83/360_F_619388307_GX2zSM5PUyvQ4xH0zPc50z5h6Je7Z9SB.jpg);
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: forte;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    background-color: white;
+    padding: 1px 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    background-color: darkorange;
+    color: white;
+}
+
+.More a {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid rgb(255, 182, 86);
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(255, 149, 62);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+.More a:hover {
+    background-color: rgb(255, 182, 86);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #FFECC7;
+    flex-wrap: wrap;
+}
+
+#Logo {
+    flex: 1;
+    display: flex;
+    justify-content:center;
+}
+
+#Logo h1 {
+    margin: 0;
+    background: url(../Pictures/LogoT.jpg) no-repeat center center;
+    height: 200px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#Logo h1 a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -1000em;
+    background-color: transparent;
+    padding: 0;
+}
+
+.header-image3{
+    background-image: url("https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/df/98/6168c1c449489ffa778a198d6a9a/bakery-hero1500x600-2x-v2._TTW_._CR0,0,3000,1200_._SR2000,800_._QL100_.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+.Menu ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.Menu li a {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid rgb(255, 182, 86);
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(255, 149, 62);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+.Menu li a:hover,
+.Menu li a:focus {
+    background-color: rgb(255, 182, 86);
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    gap: 10px;
+}
+
+#sidebar {
+    width: 100%;
+    max-width: 349px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 40px 40px 0 0;
+}
+
+#sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li a{
+    color: #003cff;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#main {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 40px 40px 0 0;
+    min-width: 600px;
+}
+
+.reviewForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+ 
+.reviewForm h1 {
+    font-size: 24px;
+    margin: 0;
+}
+ 
+.rating {
+    font-size: 20px;
+    margin: 10px 0;
+}
+ 
+.stars {
+    font-size: 30px;
+    margin: 10px 0;
+}
+ 
+.star {
+    cursor: pointer;
+    margin: 0 5px;
+}
+ 
+.one {
+    color: rgb(255, 0, 0);
+}
+ 
+.two {
+    color: rgb(255, 106, 0);
+}
+ 
+.three {
+    color: rgb(251, 255, 120);
+}
+ 
+.four {
+    color: rgb(255, 255, 0);
+}
+ 
+.five {
+    color: rgb(24, 159, 14);
+}
+ 
+.reviewForm textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+ 
+.reviewForm .reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+ 
+.reviewForm .review {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+ 
+.reviewForm .review p {
+    margin: 0;
+}
+
+.productionContent {
+    text-decoration: underline;
+    background-color: #fff;
+}
+
+.facebookLink {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(255, 149, 62);
+    color: ghostwhite;
+}
+
+.facebookLink:hover,
+.facebookLink:focus{
+    background-color: rgb(33, 111, 255);
+    color: white; 
+}
+
+.twitterLink {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(255, 149, 62);
+    color: ghostwhite;
+}
+
+.twitterLink:hover,
+.twitterLink:focus{
+    background-color: rgb(18, 239, 255);
+    color: white; 
+}
+
+.instagramLink {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(255, 149, 62);
+    color: ghostwhite;
+} 
+
+.instagramLink:hover,
+.instagramLink:focus{
+    background-color: rgb(255, 40, 112);
+    color: white; 
+}
+
+#footer {
+    background: #171717;
+    color: #d2cece;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 923px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    color: #d2cece;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: #d2cece;
+    font-size: 13px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    background-color: #171717;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section ul li a:hover,
+.footer-section ul li a:focus {
+    background-color: darkorange;
+    color: white;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+    .Menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-info {
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    #Logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 694px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        max-width: none;
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+        border-radius: 0;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+}
